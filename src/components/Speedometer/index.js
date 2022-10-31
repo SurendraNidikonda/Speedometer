@@ -6,17 +6,15 @@ class Speedometer extends Component {
   state = {speed: 0}
 
   onClickApplyBreakButton = () => {
-    const {speed} = this.state
-    if (speed > 0) {
+    
       this.setState(prevState => ({speed: prevState.speed - 10}))
-    }
+    
   }
 
   onClickAccelerateButton = () => {
-    const {speed} = this.state
-    if (speed < 200) {
+    
       this.setState(prevState => ({speed: prevState.speed + 10}))
-    }
+    
   }
 
   render() {
